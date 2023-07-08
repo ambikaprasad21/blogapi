@@ -21,7 +21,7 @@ bcrypt.genSalt(10).then((salt) => (salt = salt)); //genSalt method returns a pro
 // secret key for  creating session token jwt
 const secret = "my-ultra-extra-long-secret";
 
-app.use(cors({ credentials: true, origin: "http://localhost:3000" })); //if you are including credentials then you need to specify something more in cors
+app.use(cors({ credentials: true, origin: "https://blogbest.netlify.app" })); //if you are including credentials then you need to specify something more in cors
 app.use(express.json());
 
 // cookie-parser
